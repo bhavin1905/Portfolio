@@ -4,10 +4,12 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import leaf from "../../Assets/Projects/leaf.png";
 import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import editor from "../../Assets/Projects/lll.jpg";
+import chatify from "../../Assets/Projects/twitt.jpg";
+import suicide from "../../Assets/Projects/trip.jpg";
+import bitsOfCode from "../../Assets/Projects/output.jpg";
+import whrrl from "../../Assets/Projects/logo2.png"
+import house from "../../Assets/Projects/house.jpg"
 
 function Projects() {
   return (
@@ -23,45 +25,23 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
-              isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="AI Stock Analyzer & Recommendation System"
+              description="Built an AI-powered stock analysis agent using Python and Crewai. The system allows users to input a stock name and receive a comprehensive report, including real-time data, fundamental analysis, and actionable recommendations. It determines whether to buy, sell, or hold based on current market trends and valuation metrics."
+              // ghLink="https://github.com/soumyajit4419/Chatify"
+              // demoLink="https://chatify-49.web.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={chatify}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Twitter Sentiment AI for Memecoins"
+              description="Developed an AI agent leveraging Python, Crewai, and Microsoft Autogen to analyze memecoins' market sentiment using live tweets. The agent scrapes recent tweets, performs sentiment analysis, and generates investment recommendations—buy, sell, or hold—based on market buzz and community insights."
+              // ghLink="#"
+              // demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
 
@@ -69,21 +49,42 @@ function Projects() {
             <ProjectCard
               imgPath={suicide}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Smart AI Trip Planner"
+              description="Designed an intelligent trip planning agent with Crewai. Users provide preferences like budget, travel dates, and interests, and the system calculates an optimized itinerary, suggesting the best destinations, estimated costs, and travel schedules. It streamlines planning for hassle-free vacations."
+              // ghLink="#"
+              // demoLink="https://editor.soumya-jit.tech/"              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={whrrl}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              title="Whrrl Partner App Migration"
+              description="Successfully migrated the Whrrl Partner App from the Ionic framework to React Native within 2 months. This migration enhanced app performance, provided a smoother UI/UX experience, and reduced platform-specific limitations while maintaining feature parity."
+              // ghLink="#"
+              // demoLink="https://plant49-ai.herokuapp.com/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={house}
+              isBlog={false}
+              title="House Price Prediction with Machine Learning"
+              description="Created a machine learning model to predict house prices using supervised learning algorithms. The model analyzes historical data such as location, property size, and market trends to provide accurate price estimations, aiding buyers and sellers in decision-making."
+              // ghLink="#"
+              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={editor}
+              isBlog={false}
+              title="Stock Price Prediction Using LSTM"
+              description="Implemented a deep learning-based stock price prediction model using LSTM. The model processes historical stock data and predicts prices in 5-minute intervals, achieving an accuracy of approximately 75%. It’s designed for real-time trading decision support."
+              // ghLink="#"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
           </Col>

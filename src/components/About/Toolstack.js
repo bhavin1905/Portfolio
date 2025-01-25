@@ -6,7 +6,11 @@ import {
   SiSlack,
   SiVercel,
   SiMacos,
+  SiGithub,
+  SiOpenai,
 } from "react-icons/si";
+
+import {RiOpenAiFill} from "react-icons/ri";
 
 function Toolstack() {
   return (
@@ -24,7 +28,10 @@ function Toolstack() {
         <SiSlack />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
+        <SiGithub />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiOpenai />
       </Col>
     </Row>
   );
