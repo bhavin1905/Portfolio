@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/BhavinParmar_Ai_Developer.pdf";
+import pdf from "../../Assets/../Assets/Bhavin_Parmar_Python_Developer.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -36,7 +36,7 @@ function ResumeNew() {
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
         </Row>
-        
+
         <Row className="resume">
           <Document file={pdf} className="d-flex justify-content-center">
             <Page pageNumber={2} scale={width > 786 ? 1.7 : 0.6} />
